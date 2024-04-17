@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+
+
+background-color: rgb(34, 33, 33);
+
+}
+
+header{
+
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding: 15px 10%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    font-size:22px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    position: relative;
+    right: 30px;
+ 
+}
+
+
+header .navbar a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    margin-left: 10px;
+    padding: 5px 20px;
+    transition: .8s ease;
+}
+
+header .navbar a:hover{
+
+    color: #05bcf9;
+    background-color:transparent;
+    border: 1px solid #d0d5d6;
+    border-radius: 5px;
+ 
+    box-shadow: 3px 5px 13px rgb(12, 187, 245);
+
+
+}
+
+.home{
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    max-width: 1400px;
+
+}
+
+.home .home-content{
+
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   position: relative;
+   left:18%;
+   top: 13px;
+
+
+}
+
+ .logo-img img{
+display: flex;
+    width:300px;
+    border-radius: 70%;
+    box-shadow: 3px 20px 20px rgba(92, 190, 247, 0.5);
+    background-color: #05bcf9;
+    position: relative;
+    right:35%;
+    transition: 4s;
+}
+.logo-img img:hover{
+    transform: scale(1.2);
+   
+}
+
+.home-content h3{
+    font-size: 22px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+    color: white;
+}
+
+.home-content h1{
+
+    font-size:32px;
+    font-weight: 500;
+    margin-top: 1px;
+    margin-bottom: 12px;
+    line-height: 1;
+    color: white;
+
+}
+
+.home-content h2{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 23px;
+    color:#16afe2;
+    font-weight:400;
+    
+    
+}
+.home-content h2:hover{
+    opacity: 90%;
+    color: #66d8fe;
+}
+
+.home .home-content p{
+    font-size: 16px;
+    color: white;
+    width: 500px;
+    margin-bottom: 30px;
+    color: rgb(232, 232, 232);
+}
+
+.home .home-content .icons a i{
+    font-size:26px;
+    margin-right: 15px;
+    color: #07a9e0;
+    border-radius: 50%;
+    border: .6px solid rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    padding: 5px 8px;
+    transition:.8s ease;
+}
+
+.home .home-content .icons a i:hover{
+
+    transform: rotate(360deg);
+    background-color: #05bcf9;
+    color: black;
+    
+  box-shadow: 2px 0px 7px  rgb(12, 187, 245);
+  border: none;
+
+
+
+}
+
+/* about */
+
+.about{
+    display: grid;
+    background-color: rgb(64, 63, 63);
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+   width: 100%;
+   height: 80vh;
+gap: 13px;
+color: white;
+
+
+
+    
+}
+
+.img-about img{
+display: flex;
+    width:225px;
+    height: 260px;
+object-fit: cover;  
+max-width: 500px;
+border-radius:20px  60px 10px;
+background-color: #33a9ec;
+margin-left: 40%;
+box-shadow: 3px 0px 5px rgba(31, 192, 232, 0.6);
+animation: anm 3s infinite;
+
+transition: .4s;
+   
+}
+
+/* @keyframes anm{
+
+    0%{
+    
+        transform: scale(1.0);
+        position: relative;
+        top:6px;
+        width:220px;
+     
+       
+    }
+    50%{
+        transform: scale(1.12); 
+        position: relative;
+        bottom: 3px;
+        width:220px;
+
+     
+       
+    }
+    100%{
+        transform: scale(1);
+        width:220px;
+     
+      
+    }
+} */
+
+.img-about img:hover{
+
+    transform:scaleY(1.2);
+
+}
+
+.info-about p{
+    font-size: 19px;
+    line-height:2;
+}
+
+.info-about span{
+
+    color: #05bcf9;
+    margin-left:8px;
+    text-align: center;
+}
+
+.about-text h2{
+
+    position: relative;
+    bottom: 40px;
+  
+  
+
+ 
+}
+
+
+
+.title-services{
+
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1ab7eb;
+    position: relative;
+   top: 90px;
+}
+
+
+
+
+.con{
+
+
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 130px;
+   flex-wrap: wrap;
+ 
+
+
+ 
+}
+
+.curd{
+
+    background-color:white;
+    width: 250px;
+    box-shadow: 0 25px 60px rgba(1,1,1 ,25%);
+    border-radius: 10px;
+    padding: 60px 60px;
+    transition: .7s ease;
+    position: relative;
+    top:130px;
+    left: 20px;
+    transition: .8s ease;
+
+
+}
+
+.curd:hover{
+
+    background-color: rgb(225, 220, 220);
+
+    box-shadow: 5px 5px 5px rgba(151, 226, 253, 0.6);
+    border-left:  5px solid rgb(188, 183, 183);
+    transform:scaleX(1.1);
+}
+
+
+
+
+.icon{
+
+    font-size: 30px;
+    text-align: center;
+    color: #4c6ef5;
+}
+
+.infotext h3{
+
+
+    font-size:16px;
+    font-weight: 700;
+    margin: 10px;
+
+}
+
+.infotext{
+
+    text-align: center;
+}
+
+/* contact */
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(51, 50, 50);
+   
+    margin-top: 600px;
+    color: white;
+    height:90vh;
+}
+
+
+.contactforms{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+
+.contactforms form{
+    position: absolute;
+    width: 500px;
+    margin-top: 200px;
+
+}
+
+form input{
+
+    width: 100%;
+    height:50px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background-color: rgb(228, 228, 228);
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+   
+}
+form textarea{
+    display: flex;
+ max-width:900px;
+ width: 100%;
+
+  
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(201, 197, 197);
+    margin-bottom: 20px;
+    color: black;
+ 
+
+}
+
+.sub{
+    background-color: #05bcf9;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.sub:hover{
+    background-color: #1095c2;
+
+}
